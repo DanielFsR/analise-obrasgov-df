@@ -30,22 +30,24 @@ Os dados foram extraídos da API pública do ObrasGov.br:
 ## Estrutura do Projeto
 
 O repositório está organizado da seguinte forma:
+
+```text
 ANALISE-DADOS-OBRASGOV/
 │
 ├── Relatório de Análise.pdf
-├── README.md # Este arquivo
-├── requirements.txt # Dependências do Python
+├── README.md               # Este arquivo
+├── requirements.txt        # Dependências do Python
 │
 ├── data/
-│ ├── raw/ # Dados brutos extraídos (obrasgov_df.csv, obrasgov_df.json)
-│ └── processed/ # Dados limpos e prontos para análise (obras_df_para_analise.csv)
+│   ├── raw/                # Dados brutos extraídos (csv, json)
+│   └── processed/          # Dados limpos para análise
 │
 ├── notebooks/
-│ └── analise_obrasgov_df.ipynb # O notebook Jupyter com todo o código e análise
+│   └── analise_obrasgov_df.ipynb  # Notebook com o código
 │
 └── db/
-└── obras_df.db # Banco de dados SQLite 
-
+    └── obras_df.db         # Banco de dados SQLite
+```
 
 ##  Metodologia e Tratamento dos Dados
 
@@ -64,7 +66,7 @@ O processo seguiu as seguintes etapas:
 
 ## Análises Realizadas
 
-Utilizando o `df_analise` (557 projetos com valores > R$ 1), foram realizadas as seguintes análises, na ordem apresentada no notebook:
+Utilizando o `df_analise` (557 projetos)  foram realizadas as seguintes análises, na ordem apresentada no notebook:
 
 1.  **Distribuição do Valor dos Projetos:**
 
